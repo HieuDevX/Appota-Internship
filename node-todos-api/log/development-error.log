@@ -1,0 +1,14 @@
+[2018-11-19T04:26:40.366Z] [31merror[39m: app.js| Failed to connect database! Error:MongoError: Authentication failed.
+[2018-11-19T04:27:31.167Z] [31merror[39m: app.js| Failed to connect database!
+      MongoError: Authentication failed.
+[2018-11-19T04:27:45.767Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:30:09.281Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:32:11.137Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:32:18.056Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:54:24.534Z] [31merror[39m: app.js| Failed to connect database!
+    MongoNetworkError: failed to connect to server [ds255797.mlab.com:55797] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND ds255797.mlab.com ds255797.mlab.com:55797]
+[2018-11-19T10:24:58.083Z] [31merror[39m: setupController.js| TypeError: TodoItem.create(...).exec is not a function

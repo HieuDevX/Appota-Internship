@@ -1,0 +1,518 @@
+{"level":"info","message":"Connect database successfully!"}
+[2018-11-19T04:10:21.644Z] [32minfo[39m: Connect database successfully!
+[2018-11-19T04:11:01.016Z] [32minfo[39m: Connect database successfully!
+[2018-11-19T04:12:18.905Z] [32minfo[39m: C:\Users\hoang\OneDrive\Desktop\NodeJS\revision\node-todos-api\log\logger.js Connect database successfully!
+[2018-11-19T04:12:44.802Z] [32minfo[39m: undefined Connect database successfully!
+[2018-11-19T04:13:03.399Z] [32minfo[39m: undefined Connect database successfully!
+[2018-11-19T04:13:16.239Z] [32minfo[39m: Connect database successfully!
+[2018-11-19T04:15:15.698Z] [32minfo[39m: undefined Connect database successfully!
+[2018-11-19T04:18:37.928Z] [32minfo[39m: Connect database successfully!
+[2018-11-19T04:21:20.155Z] [32minfo[39m: C:\Users\hoang\OneDrive\Desktop\NodeJS\revision\node-todos-api\app.js| Connect database successfully!
+[2018-11-19T04:23:32.246Z] [32minfo[39m: logger.js C:\Users\hoang\OneDrive\Desktop\NodeJS\revision\node-todos-api\app.js| Connect database successfully!
+[2018-11-19T04:23:57.423Z] [32minfo[39m: logger.js Connect database successfully!
+[2018-11-19T04:24:15.258Z] [32minfo[39m: Connect database successfully!
+[2018-11-19T04:24:34.060Z] [32minfo[39m: Connect database successfully!
+[2018-11-19T04:24:43.668Z] [32minfo[39m: C:\Users\hoang\OneDrive\Desktop\NodeJS\revision\node-todos-api\app.js Connect database successfully!
+[2018-11-19T04:25:01.939Z] [32minfo[39m: C:\Users\hoang\OneDrive\Desktop\NodeJS\revision\node-todos-api\app.js Connect database successfully!
+[2018-11-19T04:25:11.708Z] [32minfo[39m: app.js Connect database successfully!
+[2018-11-19T04:25:30.654Z] [32minfo[39m: app.js Connect database successfully!
+[2018-11-19T04:25:47.965Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:26:08.669Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:26:29.144Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:26:40.366Z] [31merror[39m: app.js| Failed to connect database! Error:MongoError: Authentication failed.
+[2018-11-19T04:27:31.167Z] [31merror[39m: app.js| Failed to connect database!
+      MongoError: Authentication failed.
+[2018-11-19T04:27:45.767Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:30:09.281Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:32:11.137Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:32:17.236Z] [32minfo[39m: App listening on port: 3000
+[2018-11-19T04:32:18.056Z] [31merror[39m: app.js| Failed to connect database!
+    MongoError: Authentication failed.
+[2018-11-19T04:32:32.931Z] [32minfo[39m: App listening on port: 3000
+[2018-11-19T04:32:34.330Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:32:54.436Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:32:55.788Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:33:02.827Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:33:04.225Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:34:32.141Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:34:33.792Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:36:35.113Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:36:36.823Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:36:57.494Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:36:58.843Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:37:19.518Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:37:20.832Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:37:51.127Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:37:52.363Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T04:54:02.281Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:54:10.253Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T04:54:24.534Z] [31merror[39m: app.js| Failed to connect database!
+    MongoNetworkError: failed to connect to server [ds255797.mlab.com:55797] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND ds255797.mlab.com ds255797.mlab.com:55797]
+[2018-11-19T08:26:27.913Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:26:30.904Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:28:49.365Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:30:18.069Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:32:51.726Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:35:19.920Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:35:56.479Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:37:36.597Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:37:36.619Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:41:30.277Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:41:30.300Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:41:56.501Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:41:56.537Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:44:55.055Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:44:55.095Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:45:25.692Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:45:25.734Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:47:17.555Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:47:17.589Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:48:28.144Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:48:28.178Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:49:21.190Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:49:21.228Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:50:32.751Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:50:32.788Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:50:34.115Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T08:50:50.995Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:50:51.034Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:50:52.397Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T08:51:00.637Z] [32minfo[39m: todoItemModel.js| 
+[2018-11-19T08:51:00.639Z] [32minfo[39m: todoController.js| []
+[2018-11-19T08:53:36.276Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:53:36.315Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:53:37.755Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T08:53:41.178Z] [32minfo[39m: todoItemModel.js| 
+[2018-11-19T08:53:41.180Z] [32minfo[39m: todoController.js| []
+[2018-11-19T08:56:11.445Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:56:11.483Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:56:13.208Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T08:57:44.361Z] [32minfo[39m: todoItemModel.js| 
+[2018-11-19T08:57:44.363Z] [32minfo[39m: todoController.js| []
+[2018-11-19T08:59:45.073Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T08:59:45.107Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T08:59:46.769Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T08:59:50.011Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T08:59:50.018Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0}]
+[2018-11-19T09:00:16.694Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:00:16.732Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:00:18.065Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:00:27.243Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:00:27.277Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:00:28.570Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:01:16.235Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:01:16.271Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:01:18.978Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:01:19.253Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T09:01:19.263Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0}]
+[2018-11-19T09:02:05.891Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:02:05.949Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:02:07.295Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:02:10.190Z] [32minfo[39m: todoItemModel.js| ID: 5bef8c9e42199b0c54fba073
+[2018-11-19T09:02:10.194Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T09:02:10.200Z] [32minfo[39m: todoController.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T09:04:25.145Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:04:25.181Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:04:37.108Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:04:37.150Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:04:38.391Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:04:39.453Z] [32minfo[39m: todoItemModel.js| ID: 5bef8c9e42199b0c54fba073
+[2018-11-19T09:04:39.458Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T09:04:39.465Z] [32minfo[39m: todoController.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T09:37:46.066Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:37:46.138Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:37:47.778Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:38:52.330Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:38:52.384Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:38:53.754Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:38:54.690Z] [32minfo[39m: todoItemModel.js| { _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:38:54.694Z] [32minfo[39m: todoController.js| { _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:39:09.304Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:39:09.313Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"haha","isDone":true,"__v":0}]
+[2018-11-19T09:39:55.364Z] [32minfo[39m: todoItemModel.js| { _id: 5bf284e45b4bee1c805864c8,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:39:55.367Z] [32minfo[39m: todoController.js| { _id: 5bf284e45b4bee1c805864c8,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:43:13.631Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:43:13.704Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:43:16.594Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:43:16.626Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:43:17.970Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:48:45.807Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:48:45.857Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:48:49.282Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:48:49.313Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:48:53.646Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:48:53.691Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:48:55.069Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:49:27.529Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:49:27.607Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:49:28.854Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:49:32.918Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 },{ _id: 5bf284e45b4bee1c805864c8,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:49:32.928Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"haha","isDone":true,"__v":0},{"_id":"5bf284e45b4bee1c805864c8","text":"haha","isDone":true,"__v":0}]
+[2018-11-19T09:51:24.478Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:51:24.527Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:51:26.386Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:51:40.742Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T09:51:40.744Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T09:51:49.468Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 },{ _id: 5bf284e45b4bee1c805864c8,
+  text: 'haha',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T09:51:49.482Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"haha","isDone":true,"__v":0},{"_id":"5bf284e45b4bee1c805864c8","text":"haha","isDone":true,"__v":0}]
+[2018-11-19T09:53:42.490Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:53:42.527Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:53:44.363Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:54:43.850Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:54:43.886Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:54:45.688Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:55:08.334Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:55:08.371Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:55:09.737Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:55:20.438Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T09:55:20.471Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T09:55:22.220Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T09:55:56.647Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T09:55:56.649Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T09:56:02.197Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 },{ _id: 5bf284e45b4bee1c805864c8,
+  text: '12',
+  isDone: null,
+  __v: 0 }
+[2018-11-19T09:56:02.208Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"haha","isDone":true,"__v":0},{"_id":"5bf284e45b4bee1c805864c8","text":"12","isDone":null,"__v":0}]
+[2018-11-19T10:02:54.001Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:02:54.053Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:02:55.791Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:03:43.935Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T10:03:43.937Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T10:03:50.430Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'haha',
+  isDone: true,
+  __v: 0 },{ _id: 5bf284e45b4bee1c805864c8,
+  text: 'RESTful API',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T10:03:50.445Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"haha","isDone":true,"__v":0},{"_id":"5bf284e45b4bee1c805864c8","text":"RESTful API","isDone":false,"__v":0}]
+[2018-11-19T10:04:32.979Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T10:04:32.983Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T10:04:39.470Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'Express Typescript',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284e45b4bee1c805864c8,
+  text: 'RESTful API',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T10:04:39.481Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"Express Typescript","isDone":false,"__v":0},{"_id":"5bf284e45b4bee1c805864c8","text":"RESTful API","isDone":false,"__v":0}]
+[2018-11-19T10:06:52.593Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:06:52.665Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:06:56.320Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:06:56.362Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:06:57.760Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:08:41.170Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:08:41.210Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:08:42.683Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:09:33.698Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:09:33.731Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:09:34.977Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:10:02.081Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:10:02.119Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:10:03.457Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:10:11.224Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:10:11.260Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:10:12.822Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:10:29.032Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T10:10:29.034Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T10:10:34.445Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'Express Typescript',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T10:10:34.455Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"Express Typescript","isDone":false,"__v":0}]
+[2018-11-19T10:10:45.235Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:10:45.270Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:10:46.650Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:11:05.282Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:11:05.316Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:11:07.168Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:12:26.655Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:12:26.700Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:12:28.291Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:17:21.016Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:17:21.066Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:17:33.502Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:17:42.155Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:17:42.209Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:17:43.447Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:19:45.929Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:19:45.962Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:19:47.529Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:19:55.824Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:19:55.855Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:19:57.242Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:22:34.711Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:22:34.743Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:22:36.595Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:22:56.104Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:22:56.139Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:22:57.392Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:23:11.425Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:23:11.458Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:23:12.714Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:24:45.525Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:24:45.557Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:24:49.670Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:24:49.709Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:24:50.945Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:24:58.083Z] [31merror[39m: setupController.js| TypeError: TodoItem.create(...).exec is not a function
+[2018-11-19T10:25:32.104Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:25:32.144Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:25:33.405Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:25:38.777Z] [32minfo[39m: todoItemModel.js| { _id: 5bf28fa27c536837a458d95f, __v: 0 }
+[2018-11-19T10:25:38.779Z] [32minfo[39m: setupController.js| { _id: 5bf28fa27c536837a458d95f, __v: 0 }
+[2018-11-19T10:25:45.759Z] [32minfo[39m: todoItemModel.js| { _id: 5bef8c9e42199b0c54fba073,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba074,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bef8c9e42199b0c54fba075,
+  text: 'Review ES6, TS, Babel,',
+  isDone: false,
+  __v: 0 },{ _id: 5bf284ae5b4bee1c805864c7,
+  text: 'Express Typescript',
+  isDone: false,
+  __v: 0 },{ _id: 5bf28f7ad3f9e52e34edbd66, __v: 0 },{ _id: 5bf28fa27c536837a458d95f, __v: 0 }
+[2018-11-19T10:25:45.769Z] [32minfo[39m: todoController.js| [{"_id":"5bef8c9e42199b0c54fba073","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba074","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bef8c9e42199b0c54fba075","text":"Review ES6, TS, Babel,","isDone":false,"__v":0},{"_id":"5bf284ae5b4bee1c805864c7","text":"Express Typescript","isDone":false,"__v":0},{"_id":"5bf28f7ad3f9e52e34edbd66","__v":0},{"_id":"5bf28fa27c536837a458d95f","__v":0}]
+[2018-11-19T10:26:57.017Z] [32minfo[39m: todoItemModel.js| 
+[2018-11-19T10:26:57.019Z] [32minfo[39m: todoController.js| []
+[2018-11-19T10:27:06.412Z] [32minfo[39m: todoItemModel.js| { _id: 5bf28ffa7c536837a458d960, __v: 0 }
+[2018-11-19T10:27:06.414Z] [32minfo[39m: setupController.js| { _id: 5bf28ffa7c536837a458d960, __v: 0 }
+[2018-11-19T10:28:04.095Z] [32minfo[39m: app.js| mongodb://hieuht:NodeJSOJT@ds255797.mlab.com:55797/todosnodejs
+[2018-11-19T10:28:04.137Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:28:05.668Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:28:16.555Z] [32minfo[39m: todoItemModel.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b7,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b8,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T10:28:16.562Z] [32minfo[39m: setupController.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b7,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b8,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T10:32:05.111Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:32:06.628Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:43:29.534Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:43:32.567Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:43:34.294Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:48:45.912Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:48:49.056Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:48:50.535Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:58:11.624Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T10:58:13.270Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T10:59:59.552Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T11:00:01.123Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T11:00:19.122Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T11:00:20.447Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T11:00:31.950Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-19T11:00:33.344Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-19T11:02:24.567Z] [32minfo[39m: todoItemModel.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b7,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b8,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T11:02:24.574Z] [32minfo[39m: todoController.js| [{"_id":"5bf2903ee38e2d1124e096b6","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b7","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b8","text":"Revise ES6, TS","isDone":true,"__v":0}]
+[2018-11-19T11:02:47.012Z] [32minfo[39m: todoItemModel.js| ID: 5bf2903ee38e2d1124e096b6
+[2018-11-19T11:02:47.015Z] [32minfo[39m: todoItemModel.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T11:02:47.018Z] [32minfo[39m: todoController.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T11:03:30.496Z] [32minfo[39m: todoItemModel.js| { _id: 5bf29882adaea2393cc486c7,
+  text: 'Hello World!',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T11:03:30.500Z] [32minfo[39m: todoController.js| { _id: 5bf29882adaea2393cc486c7,
+  text: 'Hello World!',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T11:03:36.841Z] [32minfo[39m: todoItemModel.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b7,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b8,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 },{ _id: 5bf29882adaea2393cc486c7,
+  text: 'Hello World!',
+  isDone: false,
+  __v: 0 }
+[2018-11-19T11:03:36.851Z] [32minfo[39m: todoController.js| [{"_id":"5bf2903ee38e2d1124e096b6","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b7","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b8","text":"Revise ES6, TS","isDone":true,"__v":0},{"_id":"5bf29882adaea2393cc486c7","text":"Hello World!","isDone":false,"__v":0}]
+[2018-11-19T11:04:01.372Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T11:04:01.373Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T11:04:06.870Z] [32minfo[39m: todoItemModel.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b7,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b8,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 },{ _id: 5bf29882adaea2393cc486c7,
+  text: 'Hello World!',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T11:04:06.878Z] [32minfo[39m: todoController.js| [{"_id":"5bf2903ee38e2d1124e096b6","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b7","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b8","text":"Revise ES6, TS","isDone":true,"__v":0},{"_id":"5bf29882adaea2393cc486c7","text":"Hello World!","isDone":true,"__v":0}]
+[2018-11-19T11:04:18.124Z] [32minfo[39m: todoItemModel.js| [object Object]
+[2018-11-19T11:04:18.126Z] [32minfo[39m: todoController.js| [object Object]
+[2018-11-19T11:04:22.819Z] [32minfo[39m: todoItemModel.js| { _id: 5bf2903ee38e2d1124e096b6,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b7,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf2903ee38e2d1124e096b8,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-19T11:04:22.826Z] [32minfo[39m: todoController.js| [{"_id":"5bf2903ee38e2d1124e096b6","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b7","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b8","text":"Revise ES6, TS","isDone":true,"__v":0}]
