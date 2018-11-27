@@ -516,3 +516,78 @@
   isDone: true,
   __v: 0 }
 [2018-11-19T11:04:22.826Z] [32minfo[39m: todoController.js| [{"_id":"5bf2903ee38e2d1124e096b6","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b7","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf2903ee38e2d1124e096b8","text":"Revise ES6, TS","isDone":true,"__v":0}]
+[2018-11-21T04:00:14.271Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-21T04:00:18.980Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-21T04:02:00.222Z] [32minfo[39m: todoItemModel.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e015,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e016,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-21T04:02:00.229Z] [32minfo[39m: setupController.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e015,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e016,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-21T04:03:01.915Z] [32minfo[39m: todoItemModel.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e015,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e016,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-21T04:03:01.922Z] [32minfo[39m: todoController.js| [{"_id":"5bf4d8b6c715d92824b2e014","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf4d8b6c715d92824b2e015","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf4d8b6c715d92824b2e016","text":"Revise ES6, TS","isDone":true,"__v":0}]
+[2018-11-21T04:03:19.427Z] [32minfo[39m: todoItemModel.js| ID: 5bf4d8b6c715d92824b2e014
+[2018-11-21T04:03:19.430Z] [32minfo[39m: todoItemModel.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-21T04:03:19.435Z] [32minfo[39m: todoController.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-23T02:44:07.523Z] [32minfo[39m: app.js| App listening on port: 3000
+[2018-11-23T02:44:08.917Z] [32minfo[39m: app.js| Connect database successfully!
+[2018-11-23T02:45:20.589Z] [32minfo[39m: todoItemModel.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e015,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e016,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-23T02:45:20.596Z] [32minfo[39m: todoController.js| [{"_id":"5bf4d8b6c715d92824b2e014","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf4d8b6c715d92824b2e015","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf4d8b6c715d92824b2e016","text":"Revise ES6, TS","isDone":true,"__v":0}]
+[2018-11-23T02:45:59.794Z] [32minfo[39m: todoItemModel.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e015,
+  text: 'Revise async/await',
+  isDone: false,
+  __v: 0 },{ _id: 5bf4d8b6c715d92824b2e016,
+  text: 'Revise ES6, TS',
+  isDone: true,
+  __v: 0 }
+[2018-11-23T02:45:59.804Z] [32minfo[39m: todoController.js| [{"_id":"5bf4d8b6c715d92824b2e014","text":"Understand NodeJS Event loop","isDone":false,"__v":0},{"_id":"5bf4d8b6c715d92824b2e015","text":"Revise async/await","isDone":false,"__v":0},{"_id":"5bf4d8b6c715d92824b2e016","text":"Revise ES6, TS","isDone":true,"__v":0}]
+[2018-11-23T02:46:14.842Z] [32minfo[39m: todoItemModel.js| ID: 5bf4d8b6c715d92824b2e014
+[2018-11-23T02:46:14.845Z] [32minfo[39m: todoItemModel.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
+[2018-11-23T02:46:14.848Z] [32minfo[39m: todoController.js| { _id: 5bf4d8b6c715d92824b2e014,
+  text: 'Understand NodeJS Event loop',
+  isDone: false,
+  __v: 0 }
