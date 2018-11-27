@@ -1,0 +1,1 @@
+* function.js: revise function in javascript, first-class function, Immediately-invoked Function Expressions, function as a parameter
