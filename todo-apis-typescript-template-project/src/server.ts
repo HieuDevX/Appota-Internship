@@ -44,6 +44,7 @@ import routes from './routes/routes';
 // import bearerToken from './custom/middlewares/bearer.token';
 // import { redis } from './caches';
 import dev from './custom/helpers/dev';
+import wtlogger from './custom/helpers/log/logger';
 import * as moment from 'moment-timezone';
 import { Logger } from 'mongodb';
 
@@ -55,38 +56,44 @@ const server = http.createServer(app);
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
 // app.use(helmet());
 // app.use(compress());
 // app.use(bearerToken());
 
 if (process.env.NODE_ENV !== 'test') {
-  mongoose.connect(
-    MONGODB_URI,
-    { useNewUrlParser: true },
-  );
+  try {
+    mongoose.connect(
+      MONGODB_URI,
+      { useNewUrlParser: true },
+    );
+  } catch (error) {
+    wtlogger.error(`Failed to connect mongodb: ${error}`);
+  }
 }
 if (process.env.NODE_ENV === 'debug') {
   mongoose.set('debug', true);
 
   let logCount = 0;
   Logger.setCurrentLogger((msg, state) => {
-    console.log(`MONGO DB REQUEST ${++logCount}: ${msg}`);
+    wtlogger.info(`MONGO DB REQUEST ${++logCount}: ${msg}`);
   });
   Logger.setLevel('debug');
   Logger.filter('class', ['Cursor']);
-  app.use(
-    morgan(':method :url :status :res[content-length] - :response-time ms'),
-  );
+  app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
 }
+
+app.use(morgan('dev'));
 
 app.use(async (req: Request, res: Response, next: NextFunction) => {
   try {
-    console.log(`Ready state: ${mongoose.connection.readyState}`);
+    // wtlogger.info(`MongoDb ready state: ${mongoose.connection.readyState}`);
     if (mongoose.connection.readyState !== 1) {
       dev('connect mongodb error', 'error');
+      wtlogger.error(`failed to connect mongodb`);
 
       // Reconnect if we can
-      await mongoose.connect(MONGODB_URI);
+      await mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
     }
 
     // Redis handle error
@@ -103,6 +110,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
 
 app.use(routes);
 
+// Hanlde all error thrown from controller or other middlewares
 app.use((error: any, req: Request, res: Response, next: NextFunction) => {
   if (error.code) {
     res.json({
@@ -131,7 +139,7 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 server.listen(port);
-console.log('Server running at port: ' + port);
-console.log(`ENV: ${process.env.NODE_ENV}`);
+wtlogger.info(`${path.basename(__filename)}| Server running at: http://localhost:${port}`);
+wtlogger.info(`${path.basename(__filename)}| ENV: ${process.env.NODE_ENV}`);
 
 export default server; // for tests

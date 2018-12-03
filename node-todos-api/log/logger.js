@@ -3,7 +3,6 @@ import { format, createLogger, transports } from 'winston';
 // import moment from 'moment';
 
 const logger = createLogger({
-  level: 'info',
   format: format.combine(
     format.timestamp(),
     format.colorize(),
@@ -11,11 +10,9 @@ const logger = createLogger({
   ),
   transports: [
     new transports.File({ filename: './log/development-error.log', level: 'error' }),
-    new transports.Console({ level: 'error' }),
     new transports.File({ filename: './log/development-info.log', level: 'info' }),
-    new transports.Console({ level: 'info' }),
     new transports.File({ filename: './log/development-warn.log', level: 'warn' }),
-    new transports.Console({ level: 'warn' }),
+    new transports.Console(),
   ],
 });
 
