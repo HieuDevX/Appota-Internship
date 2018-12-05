@@ -1,11 +1,11 @@
 import { NextFunction, Request, Response } from 'express';
 import * as path from 'path';
-import wtlogger from '../custom/helpers/log/logger';
+import wtlogger from '../custom_modules/helpers/log/logger';
 import TodoItem from '../models/todoItemModel';
 import SeedTodosData from '../models/seedTodosData';
 import * as mongoose from 'mongoose';
-import Exception from '../custom/exceptions/Exception';
-import logger from '../custom/helpers/log/logger';
+import Exception from '../custom_modules/exceptions/Exception';
+import logger from '../custom_modules/helpers/log/logger';
 
 class TodosController {
   public initTodosData = async (req: Request, res: Response, next: NextFunction) => {

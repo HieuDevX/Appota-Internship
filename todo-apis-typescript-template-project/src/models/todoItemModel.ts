@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import wtlogger from '../custom/helpers/log/logger';
+import wtlogger from '../custom_modules/helpers/log/logger';
 import seedData from './seedTodosData';
 
 const { Schema } = mongoose;

@@ -36,15 +36,15 @@ import {
   TIMEZONE,
   SERVER_PORT,
   SERVER_TEST_PORT,
-} from './custom/configs/env-configs';
-import ExceptionCode from './custom/exceptions/ExceptionCode';
-import Exception from './custom/exceptions/Exception';
+} from './custom_modules/configs/env-configs';
+import ExceptionCode from './custom_modules/exceptions/ExceptionCode';
+import Exception from './custom_modules/exceptions/Exception';
 // import * as _ from 'lodash';
 import routes from './routes/routes';
-// import bearerToken from './custom/middlewares/bearer.token';
+// import bearerToken from './custom_modules/middlewares/bearer.token';
 // import { redis } from './caches';
-import dev from './custom/helpers/dev';
-import wtlogger from './custom/helpers/log/logger';
+import dev from './custom_modules/helpers/dev';
+import wtlogger from './custom_modules/helpers/log/logger';
 import * as moment from 'moment-timezone';
 import { Logger } from 'mongodb';
 
