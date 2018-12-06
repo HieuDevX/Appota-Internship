@@ -18,6 +18,8 @@
     "semicolon": [
       true,
       "always",
+      "ignore-bound-class-methods",
+      "ignore-interfaces"
     ],
     "triple-equals": [true, "allow-null-check"],
     "typedef": [true],
