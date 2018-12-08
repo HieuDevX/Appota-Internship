@@ -1,16 +1,31 @@
 import { NextFunction, Request, Response } from 'express';
 import logger from '../custom_modules/helpers/log/logger';
-import { addUser, getUserByEmail } from '../models/user';
+import { addUser, getUserByEmail, IUser } from '../models/user';
+import { getAllPosts, IPost, addNewPost, getPostById, updatePost } from '../models/post';
 import { hashPassword, comparePassword } from '../custom_modules/helpers/bcrypt/hash';
 
 class AdminController {
   public helloAdmin = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      res.json({
-        msg: 'Hello friends! Cô Tịch aka Méo béo đây',
-      });
+      // res.json({
+      //   msg: 'Hello friends! Cô Tịch aka Méo béo đây',
+      // });
+      try {
+        const posts = await getAllPosts();
+        logger.info(`Info:`);
+        console.log(posts);
+
+        const data = {
+          posts,
+          error: false,
+        };
+        res.render('admin/dashboard', { data });
+      } catch (error) {
+        logger.error(`Error:`);
+        console.log(error);
+      }
     } catch (error) {
-      return next(error);
+      res.render('admin/dashboard', { data: { error: 'Failed to get posts data' }});
     }
   }
 
@@ -56,7 +71,7 @@ class AdminController {
     const passwordHashed = await hashPassword(form.passwd);
 
     // Insert to DB
-    const user = {
+    const user: IUser = {
       email: form.email,
       password: passwordHashed,
       first_name: form.firstname,
@@ -116,7 +131,148 @@ class AdminController {
       console.log(error);
       res.render('signin', { data: { error: 'User is not exist'} });
     }
+  }
 
+  public addNewPostUI = async (req: Request, res: Response, next: NextFunction) => {
+    res.render('admin/posts/new', {data: {}});
+  };
+
+  public addNewPost = async (req: Request, res: Response, next: NextFunction) => {
+    const form = req.body;
+    logger.info(`Request body:`);
+    console.log(form);
+
+    if (typeof form.title !== 'string'
+    || form.title.trim().length === 0) {
+      res.render('admin/posts/new', { data: { error: 'Please enter title'} });
+      return;
+    }
+
+    if (typeof form.content !== 'string'
+    || form.content.trim().length === 0) {
+      res.render('admin/posts/new', { data: { error: 'Please enter content'} });
+      return;
+    }
+
+    if (typeof form.author !== 'string'
+    || form.author.trim().length === 0) {
+      res.render('admin/posts/new', { data: { error: 'Please enter author'} });
+      return;
+    }
+
+    const now = new Date();
+    form.created_at = now;
+    form.updated_at = now;
+
+    const post: IPost = {
+      title: form.title,
+      content: form.content,
+      author: form.author,
+      created_at: form.created_at,
+      updated_at: form.updated_at,
+    };
+
+    logger.info(`Post info:`);
+    console.log(post);
+
+    try {
+      const result = await addNewPost(post);
+      logger.info(`Result:`);
+      console.log(result);
+      res.redirect('/admin');
+    } catch (error) {
+      logger.error(`Error:`);
+      console.log(error);
+      const data = {
+        error: 'Failed to add new post',
+      };
+      res.render('admin/posts/new', { data });
+    }
+  };
+
+  public editPostUI = async (req: Request, res: Response, next: NextFunction) => {
+    const form = req.params;
+    logger.info(`Request body:`);
+    console.log(form);
+
+    if (typeof form.id !== 'string'
+      || (form.id as number) <= 0) {
+      res.render('admin/posts/edit', { data: { error: 'Post ID is invalid'} });
+      return;
+    }
+
+    const id = form.id;
+
+    try {
+      const result = await getPostById(id);
+      logger.info(`Result:`);
+      console.log(result);
+
+      if ((result as any).length > 0) {
+        const post = result[0];
+        const data = {
+          post,
+          error: false,
+        };
+
+        res.render('admin/posts/edit', { data });
+      } else {
+        res.render('admin/posts/edit', { data: { error: `Failed to get Post which had id = ${id}`}});
+      }
+
+    } catch (error) {
+      logger.error(`Error:`);
+      console.log(error);
+      res.render('admin/posts/edit', { data: { error: 'Failed to get Post'}});
+    }
+  }
+
+  public editPost = async (req: Request, res: Response, next: NextFunction) => {
+    const form = req.body;
+    logger.info(`Request body:`);
+    console.log(form);
+
+    if (typeof form.id !== 'string'
+    || (form.id as number) <= 0) {
+      res.render('admin/posts/edit', { data: { error: 'POST ID is invalid'} });
+      return;
+    }
+
+    if (typeof form.title !== 'string'
+    || form.title.trim().length === 0) {
+      res.render('admin/posts/edit', { data: { error: 'Please enter title'} });
+      return;
+    }
+
+    if (typeof form.content !== 'string'
+    || form.content.trim().length === 0) {
+      res.render('admin/posts/edit', { data: { error: 'Please enter content'} });
+      return;
+    }
+
+    if (typeof form.author !== 'string'
+    || form.author.trim().length === 0) {
+      res.render('admin/posts/edit', { data: { error: 'Please enter author'} });
+      return;
+    }
+
+    const post: IPost = {
+      id: form.id,
+      title: form.title,
+      content: form.content,
+      author: form.author,
+    };
+
+    try {
+      const result = await updatePost(post);
+      logger.info(`Result:`);
+      console.log(result);
+      res.redirect('/admin');
+    } catch (error) {
+      logger.error(`Error:`);
+      console.log(error);
+      res.render('admin/posts/edit', { data: { error: 'Failed to update this post'} });
+    }
   }
 }
 
