@@ -29,6 +29,20 @@ export const getUserByEmail = async (email: string) => {
   });
 };
 
+export const getAllUsers = async () => {
+  // tslint:disable:no-shadowed-variable
+  return new Promise((resolve, reject) => {
+    mysqlDb.query('SELECT * FROM users', (error, rows) => {
+      if (error) {
+        logger.error(`Error: `);
+        console.log(error);
+        reject(error);
+      }
+      resolve(rows);
+    });
+  });
+};
+
 export interface IUser {
   email: string,
   password: string,

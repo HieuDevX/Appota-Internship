@@ -5,9 +5,10 @@ const router = express.Router();
 
 // Route
 
-router.get('/', BlogController.homepage);
-
-router.get('/admin', AdminController.helloAdmin);
+router.route('/admin')
+  .get(AdminController.adminDashboard);
+router.route('/admin/posts')
+  .get(AdminController.adminPosts);
 
 // router.get('/admin/signup', AdminController.signupUI);
 // router.post('/admin/signup', AdminController.signup);
@@ -32,6 +33,22 @@ router.route('/admin/posts/edit/:id')
 router.route('/admin/posts/edit')
   .put(AdminController.editPost);
 
-router.get('/blog', BlogController.helloBlog);
+router.route('/admin/posts/delete')
+  .delete(AdminController.deletePost);
+
+router.route('/admin/users')
+  .get(AdminController.getAllUsers);
+
+router.route('/')
+  .get(BlogController.helloBlog);
+
+router.route('/blog')
+  .get(BlogController.homepage);
+
+router.route('/blog/post/:id')
+  .get(BlogController.getPostById);
+
+router.route('/blog/about')
+  .get(BlogController.about);
 
 export default router;

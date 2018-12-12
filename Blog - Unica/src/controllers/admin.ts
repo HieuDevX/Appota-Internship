@@ -1,15 +1,12 @@
 import { NextFunction, Request, Response } from 'express';
 import logger from '../custom_modules/helpers/log/logger';
-import { addUser, getUserByEmail, IUser } from '../models/user';
-import { getAllPosts, IPost, addNewPost, getPostById, updatePost } from '../models/post';
+import { addUser, getUserByEmail, IUser, getAllUsers } from '../models/user';
+import { getAllPosts, IPost, addNewPost, getPostById, updatePost, deletePost } from '../models/post';
 import { hashPassword, comparePassword } from '../custom_modules/helpers/bcrypt/hash';
 
 class AdminController {
-  public helloAdmin = async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      // res.json({
-      //   msg: 'Hello friends! Cô Tịch aka Méo béo đây',
-      // });
+  public adminDashboard = async (req: Request, res: Response, next: NextFunction) => {
+    if (req.session.user) {
       try {
         const posts = await getAllPosts();
         logger.info(`Info:`);
@@ -23,11 +20,20 @@ class AdminController {
       } catch (error) {
         logger.error(`Error:`);
         console.log(error);
+        res.render('admin/dashboard', { data: { error: 'Failed to get posts data' }});
       }
-    } catch (error) {
-      res.render('admin/dashboard', { data: { error: 'Failed to get posts data' }});
+    } else {
+      res.redirect('/admin/signin');
     }
   }
+
+  public adminPosts = async (req: Request, res: Response, next: NextFunction) => {
+    if (req.session.user) {
+      res.redirect('/admin');
+    } else {
+      res.redirect('/admin/signin');
+    }
+  };
 
   public signupUI = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -120,7 +126,7 @@ class AdminController {
       if (!status) {
         res.render('signin', { data: { error: 'Wrong password' } });
       } else {
-        // đẩy thông tin vào session
+        // push user info into session
         req.session.user = user;
         logger.info(`Session:`);
         console.log(req.session.user);
@@ -134,7 +140,11 @@ class AdminController {
   }
 
   public addNewPostUI = async (req: Request, res: Response, next: NextFunction) => {
-    res.render('admin/posts/new', {data: {}});
+    if (req.session.user) {
+      res.render('admin/posts/new', {data: {}});
+    } else {
+      res.redirect('/admin/signin');
+    }
   };
 
   public addNewPost = async (req: Request, res: Response, next: NextFunction) => {
@@ -191,39 +201,43 @@ class AdminController {
   };
 
   public editPostUI = async (req: Request, res: Response, next: NextFunction) => {
-    const form = req.params;
-    logger.info(`Request body:`);
-    console.log(form);
+    if (req.session.user) {
+      const form = req.params;
+      logger.info(`Request body:`);
+      console.log(form);
 
-    if (typeof form.id !== 'string'
-      || (form.id as number) <= 0) {
-      res.render('admin/posts/edit', { data: { error: 'Post ID is invalid'} });
-      return;
-    }
-
-    const id = form.id;
-
-    try {
-      const result = await getPostById(id);
-      logger.info(`Result:`);
-      console.log(result);
-
-      if ((result as any).length > 0) {
-        const post = result[0];
-        const data = {
-          post,
-          error: false,
-        };
-
-        res.render('admin/posts/edit', { data });
-      } else {
-        res.render('admin/posts/edit', { data: { error: `Failed to get Post which had id = ${id}`}});
+      if (typeof form.id !== 'string'
+        || (form.id as number) <= 0) {
+        res.render('admin/posts/edit', { data: { error: 'Post ID is invalid'} });
+        return;
       }
 
-    } catch (error) {
-      logger.error(`Error:`);
-      console.log(error);
-      res.render('admin/posts/edit', { data: { error: 'Failed to get Post'}});
+      const id = form.id;
+
+      try {
+        const result = await getPostById(id);
+        logger.info(`Result:`);
+        console.log(result);
+
+        if ((result as any).length > 0) {
+          const post = result[0];
+          const data = {
+            post,
+            error: false,
+          };
+
+          res.render('admin/posts/edit', { data });
+        } else {
+          res.render('admin/posts/edit', { data: { error: `Failed to get Post which had id = ${id}`}});
+        }
+
+      } catch (error) {
+        logger.error(`Error:`);
+        console.log(error);
+        res.render('admin/posts/edit', { data: { error: 'Failed to get Post'}});
+      }
+    } else {
+      res.redirect('/admin/signin');
     }
   }
 
@@ -267,11 +281,62 @@ class AdminController {
       const result = await updatePost(post);
       logger.info(`Result:`);
       console.log(result);
-      res.redirect('/admin');
+      res.status(200).send({ data: { result: 'redirect', url: '/admin'}});
+      // res.redirect('/admin');
     } catch (error) {
       logger.error(`Error:`);
       console.log(error);
       res.render('admin/posts/edit', { data: { error: 'Failed to update this post'} });
+    }
+  }
+
+  public deletePost = async (req: Request, res: Response, next: NextFunction) => {
+    const form = req.body;
+    logger.info(`Request body: `);
+    console.log(form);
+
+    if (typeof form.id !== 'string'
+    || (form.id as number) <= 0) {
+      res.status(500).json({message: 'Post ID is invalid'});
+      return;
+    }
+
+    const id: number = form.id as number;
+
+    try {
+      const result = await deletePost(id);
+      logger.info(`Result:`);
+      console.log(result);
+      res.status(200).json({status_code: 200});
+    } catch (error) {
+      logger.error(`Error:`);
+      console.log(error);
+      res.status(500).json({message: 'Failed to delete this post'});
+    }
+  }
+
+  public getAllUsers = async (req: Request, res: Response, next: NextFunction) => {
+    if (req.session.user) {
+      try {
+        const users = await getAllUsers();
+        logger.info(`Info:`);
+        console.log(users);
+
+        const data = {
+          users,
+          error: false,
+        };
+        res.render('admin/users', { data });
+      } catch (error) {
+        logger.error(`Error:`);
+        console.log(error);
+        const data = {
+          error: 'Failed to get users info',
+        };
+        res.render('admin/users', { data });
+      }
+    } else {
+      res.redirect('/admin/signin');
     }
   }
 }

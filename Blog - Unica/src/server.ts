@@ -42,7 +42,7 @@ app.use(session({
   secret:  SECRET_KEY,
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true },
+  cookie: { secure: false },
 }));
 
 app.set('views', __dirname + '/views');

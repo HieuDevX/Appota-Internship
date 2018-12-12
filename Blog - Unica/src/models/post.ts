@@ -58,6 +58,20 @@ export const updatePost = async (post: IPost) => {
   });
 };
 
+export const deletePost = async (id: number) => {
+   // tslint:disable:no-shadowed-variable
+  return new Promise((resolve, reject) => {
+    mysqlDb.query('DELETE from posts WHERE id = ?', id, (error, rows) => {
+      if (error) {
+        logger.error(`Error: `);
+        console.log(error);
+        reject(error);
+      }
+      resolve(rows);
+    });
+  });
+};
+
 export interface IPost {
   title: string,
   content: string,
