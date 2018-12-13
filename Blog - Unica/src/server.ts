@@ -44,13 +44,14 @@ app.use(session({
   secret:  SECRET_KEY,
   resave: false,
   saveUninitialized: true,
+  // allow write session without https
   cookie: { secure: false },
 }));
 
-app.set('views', __dirname + '/views');
+app.set('views', 'views');
 app.set('view engine', 'ejs');
 
-app.use('/static', express.static(__dirname + '/public'));
+app.use('/static', express.static('public'));
 
 if (process.env.NODE_ENV !== 'test') {
   try {
@@ -66,7 +67,7 @@ app.use(morgan('dev'));
 app.use(async (req: Request, res: Response, next: NextFunction) => {
   try {
     if (mysqlDb.state  === 'disconnect' || mysqlDb.state === 'protocol_error') {
-      logger.error(`f\Failed to connect mysql`);
+      logger.error(`Failed to connect mysql`);
 
       // Reconnect if we can
       mysqlDb.connect();
