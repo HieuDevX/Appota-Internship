@@ -22,6 +22,8 @@ import * as session from 'express-session';
 import * as http from 'http';
 import * as cors from 'cors';
 import * as morgan from 'morgan';
+import * as socketio from 'socket.io';
+import socketControl from './custom_modules/common/socketcontroller';
 
 import mysqlDb from './custom_modules/common/mysql';
 import logger from './custom_modules/helpers/log/logger';
@@ -109,5 +111,8 @@ server.listen(port, () => {
   logger.info(`Server is running at: http://localhost:${port}`);
   logger.info(`ENV: ${process.env.NODE_ENV}`);
 });
+
+const io = socketio(server);
+socketControl(io);
 
 export default server;

@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { AdminController, BlogController } from '../controllers';
+import { AdminController, BlogController, ChatController } from '../controllers';
 
 const router = express.Router();
 
@@ -50,5 +50,8 @@ router.route('/blog/post/:id')
 
 router.route('/blog/about')
   .get(BlogController.about);
+
+router.route('/chat')
+  .get(ChatController.chatUI);
 
 export default router;
