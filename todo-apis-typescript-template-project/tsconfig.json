@@ -23,7 +23,6 @@
     "preserveConstEnums": true,
   },
   "include": [
-    "src", 
-    // "src/node_modules"
+    "src",
   ]
 }

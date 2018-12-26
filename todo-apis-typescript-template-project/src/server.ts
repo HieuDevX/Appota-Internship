@@ -5,7 +5,8 @@ import * as dotEnvSafe from 'dotenv-safe';
 (() => {
   if (
     process.env.NODE_ENV === 'production' ||
-    process.env.NODE_ENV === 'debug'
+    process.env.NODE_ENV === 'debug' ||
+    process.env.NODE_ENV === 'dev'
   ) {
     return;
   }
@@ -29,8 +30,6 @@ import * as http from 'http';
 import * as mongoose from 'mongoose';
 import * as morgan from 'morgan';
 import * as cors from 'cors';
-// import * as compress from 'compression';
-// import * as helmet from 'helmet';
 import {
   MONGODB_URI,
   TIMEZONE,
@@ -39,11 +38,7 @@ import {
 } from './custom_modules/configs/env-configs';
 import ExceptionCode from './custom_modules/exceptions/ExceptionCode';
 import Exception from './custom_modules/exceptions/Exception';
-// import * as _ from 'lodash';
 import routes from './routes/routes';
-// import bearerToken from './custom_modules/middlewares/bearer.token';
-// import { redis } from './caches';
-import dev from './custom_modules/helpers/dev';
 import wtlogger from './custom_modules/helpers/log/logger';
 import * as moment from 'moment-timezone';
 import { Logger } from 'mongodb';
@@ -57,19 +52,17 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
-// app.use(helmet());
-// app.use(compress());
-// app.use(bearerToken());
 
 if (process.env.NODE_ENV !== 'test') {
-  try {
-    mongoose.connect(
-      MONGODB_URI,
-      { useNewUrlParser: true },
-    );
-  } catch (error) {
-    wtlogger.error(`Failed to connect mongodb: ${error}`);
-  }
+  mongoose
+    .connect(MONGODB_URI, { useNewUrlParser: true })
+    .then(() => {
+      wtlogger.info(`MongoDB connected`);
+    })
+    .catch((error) => {
+      wtlogger.error(`Failed to connect mongodb`);
+      console.log(error);
+    });
 }
 if (process.env.NODE_ENV === 'debug') {
   mongoose.set('debug', true);
@@ -86,21 +79,15 @@ if (process.env.NODE_ENV === 'debug') {
 app.use(morgan('dev'));
 
 app.use(async (req: Request, res: Response, next: NextFunction) => {
+  wtlogger.info(`MongoDB ready state: ${mongoose.connection.readyState}`)
   try {
-    // wtlogger.info(`MongoDb ready state: ${mongoose.connection.readyState}`);
     if (mongoose.connection.readyState !== 1) {
-      dev('connect mongodb error', 'error');
       wtlogger.error(`failed to connect mongodb`);
 
       // Reconnect if we can
       await mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+      wtlogger.info(`MongoDB connected`);
     }
-
-    // Redis handle error
-    // if (redis.status !== 'ready') {
-    //     dev('redis connect error', 'error');
-    //     throw new Error();
-    // }
   } catch (error) {
     return next(new Exception('server error', 500));
   }
@@ -138,8 +125,10 @@ if (process.env.NODE_ENV === 'test') {
   port = SERVER_TEST_PORT;
 }
 
-server.listen(port);
-wtlogger.info(`${path.basename(__filename)}| Server running at: http://localhost:${port}`);
-wtlogger.info(`${path.basename(__filename)}| ENV: ${process.env.NODE_ENV}`);
+server.listen(port, () => {
+  wtlogger.info(`${path.basename(__filename)}| Server running at: http://localhost:${port}`);
+  wtlogger.info(`${path.basename(__filename)}| ENV: ${process.env.NODE_ENV}`);
+  wtlogger.info(`${path.basename(__filename)}| MongoDB URI: ${MONGODB_URI}`);
+});
 
-export default server; // for tests
+export default server;

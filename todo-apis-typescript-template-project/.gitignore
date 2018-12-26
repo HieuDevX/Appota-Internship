@@ -76,6 +76,8 @@ typings/
 # Serverless directories
 .serverless
 
+# Generated Mysql database when run docker-compose
+database-dev
 
 # End of https://www.gitignore.io/api/node
 

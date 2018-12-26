@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  web:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - SERVER_PORT=3000
+      - MONGODB_URI=mongodb://mongodb:27017/todos
+    volumes:
+      - ./src:/app/src
+      - ./views:/app/views
+    ports:
+      - "3001:3000"
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+  mongodb:
+    image: mongo
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./dist/database:/data/db
