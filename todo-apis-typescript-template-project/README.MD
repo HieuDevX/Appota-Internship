@@ -20,4 +20,4 @@
 * Production: 
 
         yarn build or npm run build
-        docker-compose -p todos-dev up -d
+        docker-compose -p todos-prod up -d
