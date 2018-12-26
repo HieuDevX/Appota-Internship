@@ -15,9 +15,9 @@
 2. Command
 * Development: 
 
-        docker-compose -f docker-compose.dev.yml up -d
+        docker-compose -f docker-compose.dev.yml -p todos-dev up -d
 
 * Production: 
 
         yarn build or npm run build
-        docker-compose up -d
+        docker-compose -p todos-dev up -d
