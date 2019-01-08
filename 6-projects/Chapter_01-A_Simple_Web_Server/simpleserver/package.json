@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node server.ts"
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node ./dist/server.js"
   },
   "keywords": [
     "nodejs",

@@ -1,0 +1,10 @@
+const enum ERROR {
+    UNKNOW = 1,
+    SYSTEM_ERROR = 500,
+    REQUEST_INVALID = 400,
+    EXPIRE_ACCESS_TOKEN = 401,
+    REQUEST_PERMISSION_DENIED = 403,
+    REQUEST_NOT_FOUND = 404,
+}
+
+export default ERROR;

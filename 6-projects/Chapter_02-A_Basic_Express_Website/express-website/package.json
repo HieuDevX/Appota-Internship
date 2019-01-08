@@ -4,11 +4,26 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node ./dist/server.js"
   },
   "keywords": [
     "express"
   ],
   "author": "hieuht",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemailer": "^5.0.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/nodemailer": "^4.6.5",
+    "@types/pug": "^2.0.4"
+  }
 }
